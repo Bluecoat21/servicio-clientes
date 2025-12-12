@@ -6,6 +6,19 @@
 </head>
 <body>
   <h1>Lista de Clientes</h1>
-  <p>Bienvenido a tu proyecto de servicios web.</p>
+  <ul id="lista-clientes"></ul>
+
+  <script>
+    fetch('clientes.json')
+      .then(res => res.json())
+      .then(data => {
+        const lista = document.getElementById('lista-clientes');
+        data.forEach(cliente => {
+          const li = document.createElement('li');
+          li.textContent = `${cliente.id} - ${cliente.nombre} (${cliente.tipo_cliente})`;
+          lista.appendChild(li);
+        });
+      });
+  </script>
 </body>
 </html>
