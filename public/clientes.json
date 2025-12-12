@@ -1,0 +1,17 @@
+[
+  {
+    "id": "001",
+    "nombre": "Luis Fernández",
+    "direccion": "Avenida Arequipa 890",
+    "celular": "99999999",
+    "tipo_cliente": "Premiun"
+  },
+  {
+    "id": "002",
+    "nombre": "María López",
+    "direccion": "Calle Lima 120",
+    "celular": "98888888",
+    "tipo_cliente": "Normal"
+  }
+]
+g
